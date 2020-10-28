@@ -265,6 +265,7 @@ body {
     font-family: Roboto;
     font-weight: bold;
     font-size: 14px;
+    text-align: center;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -289,6 +290,7 @@ body {
 
 .ul-wwd {
     margin-bottom: 94px;
+    background-color: var(--white);
 }
 .ul-wwd .li-wwd:not(:last-child) {
     padding-right: 30px;
@@ -299,10 +301,36 @@ body {
     font-family: Roboto;
     font-size: 16px;
     line-height: 1.187;
+    text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 30px;
 }
 
+.p1-ot {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.about-emp {
+    display: flex-end;
+    width: 270px;
+    height: 368px;
+    align-items: center;
+}
+
+.about-emp:not(:last-child) {
+    padding-right: 30px;
+}
+
+.foto-emp {
+    margin-bottom: 30;    
+}
+
+.name-emp {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
 /* 1 страница, описание p для h3 */
 .page1-h3-p {
     font-family: Roboto;
