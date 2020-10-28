@@ -1,3 +1,4 @@
+/* Roboto 400, 500, 700, 900 latin-cyrillic */
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -52,8 +53,23 @@
     --accent-text-color: #2196f3;
     --white: #ffffff;
     --black: #212121; 
-    --dark-background: #b3b3b3;
-    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -63,9 +79,27 @@ body {
     color: var(--main-text-color);
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 /* минус точки для всех списков */
 .ul-all {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-all .menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* все ссылки */
@@ -86,18 +120,39 @@ body {
 
 /* для header */
 .header-all {
-    background-color: #ffffff;
+    background-color: var(--white);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+ 
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Web + Studio */
 .logo {
-    font-family: Raleway;
-    font-weight: bold;
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;
 }
 
 .logo:hover,
@@ -114,6 +169,10 @@ body {
     color: #212121;
 }
 
+.contacts-header {
+    padding-left: 331px;
+}
+
 .logo-studio-footer {
     font-family: Raleway;
     font-weight: bold;
@@ -125,6 +184,20 @@ body {
 
 
 /* Page 1 section h1 + button */
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+    ;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page1-h1 {
     font-family: Roboto;
     font-weight: 900;
@@ -133,18 +206,21 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #2F303A;
+    text-align: center;
+    width: 696px;
+    margin-top: 0;
 }
 
 .page1-button {
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
+    text-align: center;
 }
 
 
@@ -240,4 +316,3 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
-
