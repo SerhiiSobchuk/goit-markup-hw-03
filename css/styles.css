@@ -141,7 +141,7 @@ body {
 
 
 /* Web + Studio */
-.logo {
+.logo-header {
     display: inline-block;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -155,8 +155,8 @@ body {
     padding-right: 93px;
 }
 
-.logo:hover,
-.logo:focus {
+.logo-header:hover,
+.logo-header:focus {
     color: var(--accent-text-color)
 }
 
@@ -297,6 +297,9 @@ body {
 }
 
 /* наша команда */
+.ot-bcg {
+    background-color: #F5F4FA;
+}
 .position {
     font-family: Roboto;
     font-size: 16px;
