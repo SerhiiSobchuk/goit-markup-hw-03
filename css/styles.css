@@ -120,6 +120,11 @@ body {
 
 /* для header */
 .header-all {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--white);
     padding-top: 24px;
     padding-bottom: 25px;
