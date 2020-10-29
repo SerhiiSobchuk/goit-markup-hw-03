@@ -141,7 +141,7 @@ body {
 
 
 /* Web + Studio */
-.logo-header {
+.header-logo {
     display: inline-block;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -155,8 +155,8 @@ body {
     padding-right: 93px;
 }
 
-.logo-header:hover,
-.logo-header:focus {
+.header-logo:hover,
+.header-logo:focus {
     color: var(--accent-text-color)
 }
 
@@ -172,16 +172,6 @@ body {
 .contacts-header {
     padding-left: 331px;
 }
-
-.logo-studio-footer {
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-}
-
 
 /* Page 1 section h1 + button */
 .hero {
@@ -297,9 +287,6 @@ body {
 }
 
 /* наша команда */
-.ot-bcg {
-    background-color: #F5F4FA;
-}
 .position {
     font-family: Roboto;
     font-size: 16px;
@@ -308,6 +295,11 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
     padding-bottom: 30px;
+}
+
+.ul-ot {
+    display: flex;
+    justify-content: space-between;
 }
 
 .p1-ot {
@@ -320,14 +312,18 @@ body {
     width: 270px;
     height: 368px;
     align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .about-emp:not(:last-child) {
-    padding-right: 30px;
+    margin-right: 30px;
 }
 
 .foto-emp {
-    margin-bottom: 30;    
+    padding-bottom: 30px;
+    border-radius: 0;   
+    background-color: var(--white);
 }
 
 .name-emp {
@@ -347,6 +343,52 @@ body {
 /* footer страниц */
 .footer-all {
     background: #2F303A;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2196F3;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    font-style: normal;
+    list-style: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-studio-footer {
+    color: var(--white)
+}
+
+.address-footer-main {
+    display: flex;
+    flex-direction: column;    
+    color: var(--white);    
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address-footer-main:hover,
+.address-footer-main:focus {
+    color: var(--accent-text-color);
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-footer {
@@ -366,6 +408,12 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* 2 страница */
+.all-port {
+    width: 80px;
+    height: 1348px;
 }
 
 /* 2 страница кнопки */
