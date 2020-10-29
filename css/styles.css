@@ -175,6 +175,11 @@ body {
 
 /* Page 1 section h1 + button */
 .hero {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -262,6 +267,15 @@ body {
 
 /* чем мы занимаемся */
 
+.wwd1 {
+    background-color: #ffffff;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;    
+}
+
 .page1-h2 {
     font-family: Roboto;
     font-weight: 700;
@@ -289,6 +303,15 @@ body {
 }
 
 /* наша команда */
+.ot1 {
+    background: #F5F4FA;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .position {
     font-family: Roboto;
     font-size: 16px;
@@ -343,8 +366,12 @@ body {
 
 /* footer страниц */
 .footer-all {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     background: #2F303A;
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
